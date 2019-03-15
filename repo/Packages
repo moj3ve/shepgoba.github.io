@@ -1,4 +1,4 @@
-Package: CamReach
+Package: com.shepgoba.camreach
 Section: Tweaks
 Maintainer: shepgoba
 Architecture: iphoneos-arm
