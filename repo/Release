@@ -1,8 +1,8 @@
-Origin: shepgoba's Repo
-Label: shepgoba's Repo
+Origin: shepgoba
+Label: shepgoba
 Suite: stable
 Version: 1.0
-Codename: repgoba
-Architecture: iphoneos-arm
+Codename: ios
+Architectures: iphoneos-arm
 Components: main
-Description: A cydia repository for shepgoba's tweaks.
+Description: shepgoba's tweak repo

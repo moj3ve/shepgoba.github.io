@@ -1,15 +1,13 @@
 Package: com.shepgoba.camreach
-Section: Tweaks
-Maintainer: shepgoba
-Architecture: iphoneos-arm
 Version: 1.0.0b1
-Depends: mobilesubstrate
-Filename: debs//com.shepgoba.camreach-1.0.0b1.deb.bz2
-Size: 6454
-MD5sum: a552ee7d8c7237fbee4d92295f89600c
-SHA1: 
-SHA256: 
-Description: A tweak to make camera toggles reachable.
+Section: Tweaks
+Maintainer: shepgoba <baapcgaming@gmail.com>
+Depends: firmware (>11.0), mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./debs/com.shepgoba.camreach-1.0.0b1.deb
+Size: 5980
+MD5sum: bbcb0932125ecb5626731a71e9a76927
+Description: This is a sample new package. Firmware should be greater than 11.0
 Name: CamReach
-Author: shepgoba <baapcgaming@gmail.com>
-
+Author: Reposi3 <reposithree@gmail.com>
+Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.newpackage
