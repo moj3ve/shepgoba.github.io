@@ -2,12 +2,12 @@ Package: com.shepgoba.camreach
 Version: 1.0.0b1
 Section: Tweaks
 Maintainer: shepgoba <baapcgaming@gmail.com>
-Depends: firmware (>11.0), mobilesubstrate
+Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Filename: ./debs/com.shepgoba.camreach-1.0.0b1.deb
+Filename: ./debs/com.shepgoba.camreach.deb
 Size: 5980
 MD5sum: bbcb0932125ecb5626731a71e9a76927
 Description: CamReach for iOS 12! Firmware should be greater than 11.0
 Name: CamReach
 Author: shepgoba <baapcgaming@gmail.com>
-Depiction: ./debs/camreach.png
+Depiction: ./depictions/camreach/camreach.png
