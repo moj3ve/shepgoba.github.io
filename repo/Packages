@@ -7,7 +7,9 @@ Architecture: iphoneos-arm
 Filename: ./debs/com.shepgoba.camreach.deb
 Size: 5980
 MD5sum: bbcb0932125ecb5626731a71e9a76927
+SHA1: 611cbfd3127b3a7d274d055eba467bef9b11aa14
+SHA256: 19f825970691ffe62e039ba188fb1245b52c132b3718a03f5cb27e80c88e261c
 Description: CamReach for iOS 12! Firmware should be greater than 11.0
 Name: CamReach
 Author: shepgoba <baapcgaming@gmail.com>
-Depiction: ./depictions/camreach/camreach.png
+Depiction: ./depictions/camreach.png
