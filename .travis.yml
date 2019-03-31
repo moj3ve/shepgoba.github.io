@@ -1,7 +1,7 @@
 os: osx
 language: objective-c
 sudo: false
-name: A Helping Dwarf
+name: TravisCIBot
 
 env:
   global:
@@ -22,11 +22,11 @@ script:
   #- cd repo_layout
   - chmod +x ./dpkg-scanpackages
   - ./dpkg-scanpackages -m debs ./debs  > ./Packages
-  - bzip2 -c9 ./Packages > ./Packages.bz2
+  #- bzip2 -c9 ./Packages > ./Packages.bz2
 
 deploy:
   provider: pages
-  skip_cleanup: true
+  skip_cleanup: false
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   target_branch: master
   on:
