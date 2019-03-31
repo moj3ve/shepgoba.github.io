@@ -13,3 +13,19 @@ Description: CamReach for iOS 12! Firmware should be greater than 11.0
 Name: CamReach
 Author: shepgoba <baapcgaming@gmail.com>
 Depiction: ./depictions/camreach.png
+
+Package: com.shepgoba.cleanphonepad
+Version: 1.0.0
+Section: Tweaks
+Maintainer: shepgoba <baapcgaming@gmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./debs/com.shepgoba.cleanphonepad.deb
+Size: 11420 
+MD5sum: 591d36cfecc5f0dbc0c9a852539cc8ed
+SHA1: 89ce220eab2bf781fd82f0e53eb62fea355f8410
+SHA256: 86198449babf3f34ef12e8594be6c8a1f5c404ae2720c8210df89c4c2bd60e26
+Description: A tweak to make the phone keypad cleaner. Tested on 12.1 only.
+Name: CleanPhonePad
+Author: shepgoba <baapcgaming@gmail.com>
+Depiction: ./depictions/cleanphonepad.png
