@@ -1,7 +1,7 @@
 os: osx
 language: objective-c
 sudo: false
-name: A Helping Dwarf
+name: TravisCIBot
 
 env:
   global:
@@ -22,7 +22,7 @@ script:
   #- cd repo_layout
   - chmod +x ./dpkg-scanpackages
   - ./dpkg-scanpackages -m debs ./debs  > ./Packages
-  - bzip2 -c9 ./Packages > ./Packages.bz2
+  #- bzip2 -c9 ./Packages > ./Packages.bz2
 
 deploy:
   provider: pages
