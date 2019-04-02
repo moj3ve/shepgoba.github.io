@@ -1,31 +1,28 @@
 Package: com.shepgoba.camreach
 Version: 0.0.1-154+debug
 Section: Tweaks
-Maintainer: shepgoba <baapcgaming@gmail.com>
+Maintainer: shepgoba
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Filename: ./debs/com.shepgoba.camreach.deb
+Filename: debs//com.shepgoba.camreach.deb
 Size: 5980
+Installed-Size: 108
 MD5sum: bbcb0932125ecb5626731a71e9a76927
-SHA1: 611cbfd3127b3a7d274d055eba467bef9b11aa14
-SHA256: 19f825970691ffe62e039ba188fb1245b52c132b3718a03f5cb27e80c88e261c
-Description: CamReach for iOS 12! Firmware should be greater than 11.0
+Description: An awesome MobileSubstrate tweak!
 Name: CamReach
-Author: shepgoba <baapcgaming@gmail.com>
-Depiction: ./depictions/camreach.png
+Author: shepgoba
 
 Package: com.shepgoba.cleanphonepad
 Version: 1.0.0
 Section: Tweaks
-Maintainer: shepgoba <baapcgaming@gmail.com>
+Maintainer: shepgoba
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Filename: ./debs/com.shepgoba.cleanphonepad.deb
-Size: 11420 
+Filename: debs//com.shepgoba.cleanphonepad.deb
+Size: 11420
+Installed-Size: 232
 MD5sum: 591d36cfecc5f0dbc0c9a852539cc8ed
-SHA1: 89ce220eab2bf781fd82f0e53eb62fea355f8410
-SHA256: 86198449babf3f34ef12e8594be6c8a1f5c404ae2720c8210df89c4c2bd60e26
-Description: A tweak to make the phone keypad cleaner. Tested on 12.1 only.
+Description: A tweak to make the Phone app keypad cleaner.
 Name: CleanPhonePad
-Author: shepgoba <baapcgaming@gmail.com>
-Depiction: ./depictions/cleanphonepad.png
+Author: shepgoba
+
