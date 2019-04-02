@@ -1,7 +1,7 @@
 os: osx
 language: objective-c
 sudo: false
-name: A Helping Dwarf
+name: TravisCIBot
 
 env:
   global:
