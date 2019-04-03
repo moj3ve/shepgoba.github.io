@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://shepgoba.me/about/</loc>
+    <loc>https://shepgoba.me/about/</loc>
   </url>
   
   <url>
-    <loc>http://shepgoba.me/series/</loc>
+    <loc>https://shepgoba.me/series/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://shepgoba.me/</loc>
+    <loc>https://shepgoba.me/</loc>
     <priority>0</priority>
   </url>
   

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shepgoba</title>
-    <link>http://shepgoba.me/</link>
+    <link>https://shepgoba.me/</link>
     <description>Recent content on shepgoba</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="http://shepgoba.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://shepgoba.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://shepgoba.me/about/</link>
+      <link>https://shepgoba.me/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://shepgoba.me/about/</guid>
+      <guid>https://shepgoba.me/about/</guid>
       <description></description>
     </item>
     
