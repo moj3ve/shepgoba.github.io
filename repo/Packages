@@ -26,4 +26,17 @@ Description: A tweak to make the Phone app keypad cleaner.
 Name: CleanPhonePad
 Author: shepgoba
 
+Package: com.shepgoba.notifyheaders
+Version: 1.0.0
+Section: Tweaks
+Maintainer: shepgoba
+Depends: mobilesubstrate, firmware (>= 11.0), org.thebigboss.libcolorpicker
+Architecture: iphoneos-arm
+Filename: debs//com.shepgoba.notifyheaders.deb
+Size: 23678
+Installed-Size: 196
+MD5sum: f407c1f718c44a7385fb1c9761ba9979
+Description: Get iOS 10 Notification Headers on iOS 12!
+Name: NotifyHeaders
+Author: shepgoba
 
