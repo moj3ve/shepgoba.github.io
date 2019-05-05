@@ -8,6 +8,7 @@ Filename: debs//com.shepgoba.beatcane.deb
 Size: 9820
 Installed-Size: 204
 MD5sum: fecdc7bfe01d0c560ead471c560cf632
+SHA256: 3df76c06ce3788f12ede42bfa5c053d0457589b05fbbff60848a5b03802caebf
 Description: Add a percent indicator for music completion
 Name: BeatCane
 Author: shepgoba
@@ -22,6 +23,7 @@ Filename: debs//com.shepgoba.camreach.deb
 Size: 5980
 Installed-Size: 108
 MD5sum: bbcb0932125ecb5626731a71e9a76927
+SHA256: 19f825970691ffe62e039ba188fb1245b52c132b3718a03f5cb27e80c88e261c
 Description: An awesome MobileSubstrate tweak!
 Name: CamReach
 Author: shepgoba
@@ -36,6 +38,7 @@ Filename: debs//com.shepgoba.cleanphonepad.deb
 Size: 11420
 Installed-Size: 232
 MD5sum: 591d36cfecc5f0dbc0c9a852539cc8ed
+SHA256: 86198449babf3f34ef12e8594be6c8a1f5c404ae2720c8210df89c4c2bd60e26
 Description: A tweak to make the Phone app keypad cleaner.
 Name: CleanPhonePad
 Author: shepgoba
@@ -50,6 +53,7 @@ Filename: debs//com.shepgoba.notifyheaders.deb
 Size: 25696
 Installed-Size: 292
 MD5sum: 544842c9bfbfcd9b828470e965620e56
+SHA256: ef6d120bc1859e1670bb5837c81e30f8276cdb0831a98269eca773807cae0ea6
 Description: Get iOS 10 Notification Headers on iOS 12!
 Name: NotifyHeaders
 Author: shepgoba
@@ -64,6 +68,7 @@ Filename: debs//com.shepgoba.noweatherinfows.deb
 Size: 2982
 Installed-Size: 104
 MD5sum: 8e2d8ccf4cb406af40dbfa802c89f27c
+SHA256: fc99566638363224ec625129650971b713ca0001f3b4858242bbf6af79f8098a
 Description: An awesome MobileSubstrate tweak!
 Name: NoWeatherInfoWS
 Author: shepgoba
