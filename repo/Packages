@@ -1,3 +1,17 @@
+Package: com.shepgoba.beatcane
+Version: 1.0
+Section: Tweaks
+Maintainer: shepgoba
+Depends: mobilesubstrate, firmware (>= 11.0)
+Architecture: iphoneos-arm
+Filename: debs//com.shepgoba.beatcane.deb
+Size: 9820
+Installed-Size: 204
+MD5sum: fecdc7bfe01d0c560ead471c560cf632
+Description: Add a percent indicator for music completion
+Name: BeatCane
+Author: shepgoba
+
 Package: com.shepgoba.camreach
 Version: 0.0.1-154+debug
 Section: Tweaks
@@ -8,7 +22,7 @@ Filename: debs//com.shepgoba.camreach.deb
 Size: 5980
 Installed-Size: 108
 MD5sum: bbcb0932125ecb5626731a71e9a76927
-Description: Swap camera top bar and camera bottom dial
+Description: An awesome MobileSubstrate tweak!
 Name: CamReach
 Author: shepgoba
 
@@ -50,7 +64,7 @@ Filename: debs//com.shepgoba.noweatherinfows.deb
 Size: 2982
 Installed-Size: 104
 MD5sum: 8e2d8ccf4cb406af40dbfa802c89f27c
-Description: Hide weather attribution text on widget screen
+Description: An awesome MobileSubstrate tweak!
 Name: NoWeatherInfoWS
 Author: shepgoba
 
