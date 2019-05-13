@@ -44,16 +44,16 @@ Name: CleanPhonePad
 Author: shepgoba
 
 Package: com.shepgoba.notifyheaders
-Version: 1.0.1
+Version: 1.1.0
 Section: Tweaks
 Maintainer: shepgoba
 Depends: mobilesubstrate, firmware (>= 11.0), org.thebigboss.libcolorpicker, net.limneos.libbulletin
 Architecture: iphoneos-arm
 Filename: debs//com.shepgoba.notifyheaders.deb
-Size: 25696
-Installed-Size: 292
-MD5sum: 544842c9bfbfcd9b828470e965620e56
-SHA256: ef6d120bc1859e1670bb5837c81e30f8276cdb0831a98269eca773807cae0ea6
+Size: 22950
+Installed-Size: 328
+MD5sum: 21cdd3a05e6cdfd7f1c40665ffd6cff8
+SHA256: e03ac4467897aa8ad19326e48179722896116e54321fe875da93290a4e8ccf0e
 Description: Get iOS 10 Notification Headers on iOS 12!
 Name: NotifyHeaders
 Author: shepgoba
@@ -67,8 +67,8 @@ Architecture: iphoneos-arm
 Filename: debs//com.shepgoba.noweatherinfows.deb
 Size: 2982
 Installed-Size: 104
-MD5sum: 8e2d8ccf4cb406af40dbfa802c89f27c
-SHA256: fc99566638363224ec625129650971b713ca0001f3b4858242bbf6af79f8098a
+MD5sum: fc99566638363224ec625129650971b713ca0001f3b4858242bbf6af79f8098a
+SHA256: 8e2d8ccf4cb406af40dbfa802c89f27c
 Description: An awesome MobileSubstrate tweak!
 Name: NoWeatherInfoWS
 Author: shepgoba
