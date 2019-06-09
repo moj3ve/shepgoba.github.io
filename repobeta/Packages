@@ -1,16 +1,15 @@
-Package: com.shepgoba.notifyheaders
-Version: 1.1.0
-Architecture: iphoneos-arm
-Maintainer: shepgoba
-Installed-Size: 296
-Depends: mobilesubstrate, firmware (>= 11.0), org.thebigboss.libcolorpicker, net.limneos.libbulletin
-Filename: debs/com.shepgoba.notifyheaders.deb
-Size: 28740
-MD5sum: 643315f27818f1ffb1512b2beadd30fc
-SHA1: b5fe792a384925b4ef7407dd0b0571124aa3707e
-SHA256: 107032fef9bd0b50ad483c7b33bd00d938e19c0bf49348c0e241c9b9faae8f54
+Package: com.shepgoba.darkphone12
+Version: 0.1
 Section: Tweaks
-Description: Get iOS 10 Notification Headers on iOS 12!
+Maintainer: shepgoba
+Depends: mobilesubstrate, me.nepeta.libcolorpicker
+Architecture: iphoneos-arm
+Filename: debs//com.shepgoba.darkphone12_0.1_iphoneos-arm.deb
+Size: 37508
+Installed-Size: 308
+MD5sum: 7283cb7ab8c9524c3f63aa4470eeefc7
+SHA256: 05a1014996f95b014ae11357d2a95d90c5d37a9728d25f4f8de47e676c7897eb
+Description: Full dark mode for the phone app! (iOS 12)
+Name: DarkPhone12
 Author: shepgoba
-Name: NotifyHeaders
 
