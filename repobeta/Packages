@@ -1,15 +1,15 @@
 Package: com.shepgoba.darkphone12
-Version: 0.1
+Version: 1.0
 Section: Tweaks
-Maintainer: shepgoba
+Maintainer: shepgoba <shepgoba@gmail.com>
 Depends: mobilesubstrate, me.nepeta.libcolorpicker
 Architecture: iphoneos-arm
-Filename: debs//com.shepgoba.darkphone12_0.1_iphoneos-arm.deb
-Size: 37508
-Installed-Size: 308
-MD5sum: 7283cb7ab8c9524c3f63aa4470eeefc7
-SHA256: 05a1014996f95b014ae11357d2a95d90c5d37a9728d25f4f8de47e676c7897eb
-Description: Full dark mode for the phone app! (iOS 12)
+Filename: debs//com.shepgoba.darkphone12-1.0.deb
+Size: 38700
+Installed-Size: 312
+MD5sum: 7a4d269d1e3752ba2a5072c69a7671db
+SHA256: c7afcb51739036898fece27ffacf62a0124af76209914ea6fa5ea7fee8e4a061
+Description: Full dark mode for the phone app!
 Name: DarkPhone12
-Author: shepgoba
+Author: shepgoba <shepgoba@gmail.com>
 
