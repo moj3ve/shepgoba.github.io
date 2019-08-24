@@ -1,76 +1,81 @@
 Package: com.shepgoba.beatcane
 Version: 1.0.1
-Section: Tweaks
-Maintainer: shepgoba
-Depends: mobilesubstrate, firmware (>= 11.0)
 Architecture: iphoneos-arm
-Filename: debs//com.shepgoba.beatcane.deb
-Size: 10800
+Maintainer: shepgoba
 Installed-Size: 204
+Depends: mobilesubstrate, firmware (>= 11.0)
+Filename: debs/com.shepgoba.beatcane.deb
+Size: 10800
 MD5sum: 4f475892494ef878fc9979ad1387e35c
+SHA1: b7399abfd149c76f06135c9fb25ca0e28437fcb4
 SHA256: 7fe389bf07d53ccdd97b01a286272fdfefa7a25f89c10f6a6209b78bb3755a2e
+Section: Tweaks
 Description: Add a percent indicator for music completion on iOS 11/12
-Name: BeatCane
 Author: shepgoba
+Name: BeatCane
 
 Package: com.shepgoba.cleanphonepad
 Version: 1.0.0
-Section: Tweaks
-Maintainer: shepgoba
-Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Filename: debs//com.shepgoba.cleanphonepad.deb
-Size: 11420
+Maintainer: shepgoba
 Installed-Size: 232
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.cleanphonepad.deb
+Size: 11420
 MD5sum: 591d36cfecc5f0dbc0c9a852539cc8ed
+SHA1: 89ce220eab2bf781fd82f0e53eb62fea355f8410
 SHA256: 86198449babf3f34ef12e8594be6c8a1f5c404ae2720c8210df89c4c2bd60e26
+Section: Tweaks
 Description: A tweak to make the Phone app keypad cleaner.
-Name: CleanPhonePad
 Author: shepgoba
+Name: CleanPhonePad
 
 Package: com.shepgoba.darkphone12
-Version: 1.0
-Section: Tweaks
-Maintainer: shepgoba <shepgoba@gmail.com>
-Depends: mobilesubstrate, me.nepeta.libcolorpicker
+Version: 1.0.1
 Architecture: iphoneos-arm
-Filename: debs//com.shepgoba.darkphone12.deb
-Size: 39146
-Installed-Size: 312
-MD5sum: d76cb3f9e0ca71e8d6ab7c187affcf22
-SHA256: 3b53de164d8a05d6830e2c6ed246138a275444776fbed5fc0a192dcf0e2943c7
+Maintainer: shepgoba <shepgoba@gmail.com>
+Installed-Size: 204
+Depends: mobilesubstrate, me.nepeta.libcolorpicker
+Filename: debs/com.shepgoba.darkphone12.deb
+Size: 35374
+MD5sum: 6ab40812876f15cb3c75a51d6f97edb5
+SHA1: 1e2f82092fb93afb3e6f015b499eb99bba8a77c5
+SHA256: 894509b9d43ec95b9fb4fe1f66d0263c0844a536907d6aa912be7293d30e357c
+Section: Tweaks
 Description: Full dark mode for the phone app!
-Name: DarkPhone12
 Author: shepgoba <shepgoba@gmail.com>
 Icon: file:///Library/PreferenceBundles/DarkPhone12.bundle/icon@2x.png
+Name: DarkPhone12
 
 Package: com.shepgoba.notifyheaders
 Version: 1.1.1
-Section: Tweaks
-Maintainer: shepgoba
-Depends: mobilesubstrate, firmware (>= 11.0), org.thebigboss.libcolorpicker, net.limneos.libbulletin
 Architecture: iphoneos-arm
-Filename: debs//com.shepgoba.notifyheaders.deb
-Size: 27120
+Maintainer: shepgoba
 Installed-Size: 424
+Depends: mobilesubstrate, firmware (>= 11.0), org.thebigboss.libcolorpicker, net.limneos.libbulletin
+Filename: debs/com.shepgoba.notifyheaders.deb
+Size: 27120
 MD5sum: e647982006554a503d91e028bafb2a39
+SHA1: cac9ab4b2d480e26e09b6362549316d88015243d
 SHA256: 9c06f82afe10d50458b7edb509bb66fce3705c650c86fee0fd34150382954ad6
+Section: Tweaks
 Description: Get iOS 10 Notification Headers on iOS 12!
-Name: NotifyHeaders
 Author: shepgoba
+Name: NotifyHeaders
 
 Package: com.shepgoba.noweatherinfows
 Version: 0.0.1
-Section: Tweaks
-Maintainer: shepgoba
-Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Filename: debs//com.shepgoba.noweatherinfows.deb
-Size: 2982
+Maintainer: shepgoba
 Installed-Size: 104
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.noweatherinfows.deb
+Size: 2982
 MD5sum: 8e2d8ccf4cb406af40dbfa802c89f27c
+SHA1: 14bc57b59ac5df15cd5df9cc7a5e2041771ca239
 SHA256: fc99566638363224ec625129650971b713ca0001f3b4858242bbf6af79f8098a
-Description: An awesome MobileSubstrate tweak!
-Name: NoWeatherInfoWS
+Section: Tweaks
+Description: Hide the annoying weather attribution text.
 Author: shepgoba
+Name: NoWeatherInfoWS
 

@@ -1,296 +1,131 @@
-#!/usr/bin/perl
-
-use warnings;
-use strict;
-
-use IO::Handle;
-use IO::File;
-
-my $version="1.13.25"; # This line modified by Makefile
-my $dpkglibdir="/usr/lib/dpkg"; # This line modified by Makefile
-
-($0) = $0 =~ m:.*/(.+):;
-
-push(@INC,$dpkglibdir);
-require 'dpkg-gettext.pl';
-textdomain("dpkg-dev");
-
-my %kmap= (optional         => 'suggests',
-	   recommended      => 'recommends',
-	   class            => 'priority',
-	   package_revision => 'revision',
-	  );
-
-my @fieldpri= ('Package',
-	       'Source',
-	       'Version',
-	       'Priority',
-	       'Section',
-	       'Essential',
-	       'Maintainer',
-	       'Pre-Depends',
-	       'Depends',
-	       'Recommends',
-	       'Suggests',
-	       'Conflicts',
-	       'Provides',
-	       'Replaces',
-	       'Enhances',
-	       'Architecture',
-	       'Filename',
-	       'Size',
-	       'Installed-Size',
-	       'MD5sum',
-		   'SHA256',
-	       'Description',
-	       'Origin',
-	       'Bugs',
-               'Name',
-               'Author',
-               'Homepage',
-               'Website',
-               'Depiction',
-               'Icon'
-	      );
-
-# This maps the fields into the proper case
-my %field_case;
-@field_case{map{lc($_)} @fieldpri} = @fieldpri;
-
-use Getopt::Long qw(:config bundling);
-
-my %options = (help            => sub { &usage; exit 0; },
-	       version         => \&version,
-	       udeb            => 0,
-	       arch            => undef,
-	       multiversion    => 0,
-	      );
-
-my $result = GetOptions(\%options,'help|h|?','version','udeb|u!','arch|a=s','multiversion|m!');
-
-sub version {
-    printf _g("Debian %s version %s.\n"), $0, $version;
-    exit;
-}
-
-sub usage {
-    printf _g(
-"Usage: %s [<option> ...] <binarypath> <overridefile> [<pathprefix>] > Packages
-
-Options:
-  -u, --udeb               scan for udebs.
-  -a, --arch <arch>        architecture to scan for.
-  -m, --multiversion       allow multiple versions of a single package.
-  -h, --help               show this help message.
-      --version            show the version.
-"), $0;
-}
-
-&usage and exit 1 if not $result and (@ARGV < 2);
-
-my $udeb = $options{udeb};
-my $arch = $options{arch};
-
-my $ext = $options{udeb} ? 'udeb' : 'deb';
-my @find_args;
-if ($options{arch}) {
-     @find_args = ('(','-name',"*_all.$ext",'-o','-name',"*_${arch}.$ext",')',);
-}
-else {
-     @find_args = ('-name',"*.$ext");
-}
-push @find_args, '-follow';
-my ($binarydir, $override, $pathprefix) = @ARGV;
--d $binarydir or die sprintf(_g("Binary dir %s not found"),
-                             $binarydir)."\n";
--e $override or die sprintf(_g("Override file %s not found"),
-                            $override)."\n";
-
-$pathprefix = '' if not defined $pathprefix;
-
-our %vercache;
-sub vercmp {
-     my ($a,$b)=@_;
-     return $vercache{$a}{$b} if exists $vercache{$a}{$b};
-     system('dpkg','--compare-versions',$a,'le',$b);
-     $vercache{$a}{$b}=$?;
-     return $?;
-}
-
-my %packages;
-my $find_h = new IO::Handle;
-open($find_h,'-|','find',"$binarydir/",@find_args,'-print')
-     or die sprintf(_g("Couldn't open %s for reading: %s"),
-                    $binarydir, $!)."\n";
-FILE:
-    while (<$find_h>) {
-	chomp;
-	my $fn = $_;
-	my $control = `dpkg-deb -I $fn control`;
-	if ($control eq "") {
-	    warn sprintf(_g("Couldn't call dpkg-deb on %s: %s, skipping package"), $fn, $!)."\n";
-	    next;
-	}
-	if ($?) {
-	    warn sprintf(_g("\`dpkg-deb -I %s control' exited with %d, skipping package"), $fn, $?)."\n";
-	    next;
-	}
-
-	my %tv = ();
-	my $temp = $control;
-	while ($temp =~ s/^\n*(\S+):[ \t]*(.*(\n[ \t].*)*)\n//) {
-	    my ($key,$value)= (lc $1,$2);
-	    if (defined($kmap{$key})) { $key= $kmap{$key}; }
-	    if (defined($field_case{$key})) { $key= $field_case{$key}; }
-	    $value =~ s/\s+$//;
-	    $tv{$key}= $value;
-	}
-	$temp =~ /^\n*$/
-	    or die sprintf(_g("Unprocessed text from %s control file; info:\n%s / %s\n"), $fn, $control, $temp);
-
-	defined($tv{'Package'})
-	    or die sprintf(_g("No Package field in control file of %s"), $fn)."\n";
-	my $p= $tv{'Package'}; delete $tv{'Package'};
-
-	if (defined($packages{$p}) and not $options{multiversion}) {
-	    foreach (@{$packages{$p}}) {
-		if (&vercmp($tv{'Version'}, $_->{'Version'})) {
-		    printf(STDERR _g(
-			  " ! Package %s (filename %s) is repeat but newer version;\n".
-			  "   used that one and ignored data from %s !\n"), $p, $fn, $_->{Filename})
-			|| die $!;
-		    $packages{$p} = [];
-		} else {
-		    printf(STDERR _g(
-			  " ! Package %s (filename %s) is repeat;\n".
-			  "   ignored that one and using data from %s !\n"), $p, $fn, $_->{Filename})
-			or die $!;
-		    next FILE;
-		}
-	    }
-	}
-	printf(STDERR _g(" ! Package %s (filename %s) has Filename field!\n"), $p, $fn) || die $!
-	    if defined($tv{'Filename'});
-
-	$tv{'Filename'}= "$pathprefix$fn";
-
-	open(C,"md5 <$fn |") || die "$fn $!";
-	chop($_=<C>); close(C); $? and die sprintf(_g("\`md5sum < %s' exited with %d"), $fn, $?)."\n";
-	/^([0-9a-f]{32})\s*-?\s*$/ or die sprintf(_g("Strange text from \`md5sum < %s': \`%s'"), $fn, $_)."\n";
-	$tv{'MD5sum'}= $1;
-
-	open(C,"shasum -a 256 <$fn |") || die "$fn $!";
-	$tv{'SHA256'}= $1;
-
-	my @stat= stat($fn) or die sprintf(_g("Couldn't stat %s: %s"), $fn, $!)."\n";
-	$stat[7] or die sprintf(_g("%s is empty"), $fn)."\n";
-	$tv{'Size'}= $stat[7];
-
-	if (defined $tv{Revision} and length($tv{Revision})) {
-	    $tv{Version}.= '-'.$tv{Revision};
-	    delete $tv{Revision};
-	}
-
-	push @{$packages{$p}}, {%tv};
-    }
-close($find_h);
-
-select(STDERR); $= = 1000; select(STDOUT);
-
-sub writelist {
-    my $title= shift(@_);
-    return unless @_;
-
-    print(STDERR " $title\n") || die $!;
-    my $packages= join(' ',sort @_);
-
-format STDERR =
-  ^<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-$packages
+.\" dpkg manual page - dpkg-scanpackages(1)
+.\"
+.\" Copyright © 1996 Michael Shields <shields@crosslink.net>
+.\" Copyright © 2006 Frank Lichtenheld <djpig@debian.org>
+.\" Copyright © 2007, 2009, 2011-2014 Guillem Jover <guillem@debian.org>
+.\" Copyright © 2009 Raphaël Hertzog <hertzog@debian.org>
+.\"
+.\" This is free software; you can redistribute it and/or modify
+.\" it under the terms of the GNU General Public License as published by
+.\" the Free Software Foundation; either version 2 of the License, or
+.\" (at your option) any later version.
+.\"
+.\" This is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public License
+.\" along with this program.  If not, see <https://www.gnu.org/licenses/>.
 .
-    while (length($packages)) { write(STDERR) || die $!; }
-    print(STDERR "\n") || die $!;
-}
-
-my (@samemaint,@changedmaint);
-
-
-my %overridden;
-my $override_fh = new IO::File $override,'r'
-    or die sprintf(_g("Couldn't open override file %s: %s"), $override, $!)."\n";
-while (<$override_fh>) {
-    s/\#.*//;
-    s/\s+$//;
-    next unless $_;
-    my ($p,$priority,$section,$maintainer)= split(/\s+/,$_,4);
-    next unless defined($packages{$p});
-    for my $package (@{$packages{$p}}) {
-	 if ($maintainer) {
-	      if ($maintainer =~ m/(.+?)\s*=\>\s*(.+)/) {
-		   my $oldmaint= $1;
-		   my $newmaint= $2;
-		   my $debmaint= $$package{Maintainer};
-		   if (!grep($debmaint eq $_, split(m:\s*//\s*:, $oldmaint))) {
-			push(@changedmaint,
-			     "  $p (package says $$package{Maintainer}, not $oldmaint)\n");
-		   } else {
-			$$package{Maintainer}= $newmaint;
-		   }
-	       } elsif ($$package{Maintainer} eq $maintainer) {
-		   push(@samemaint,"  $p ($maintainer)\n");
-	       } else {
-		   printf(STDERR _g(" * Unconditional maintainer override for %s *")."\n", $p) || die $!;
-		   $$package{Maintainer}= $maintainer;
-	       }
-	  }
-	 $$package{Priority}= $priority;
-	 $$package{Section}= $section;
-    }
-    $overridden{$p} = 1;
-}
-close($override_fh);
-
-my @missingover=();
-
-my $records_written = 0;
-for my $p (sort keys %packages) {
-    if (not defined($overridden{$p})) {
-        push(@missingover,$p);
-    }
-    for my $package (@{$packages{$p}}) {
-	 my $record= "Package: $p\n";
-	 for my $key (@fieldpri) {
-	      next unless defined $$package{$key};
-	      $record .= "$key: $$package{$key}\n";
-	 }
-	 $record .= "\n";
-	 $records_written++;
-	 print(STDOUT $record) or die sprintf(_g("Failed when writing stdout: %s"), $!)."\n";
-    }
-}
-close(STDOUT) or die sprintf(_g("Couldn't close stdout: %s"), $!)."\n";
-
-my @spuriousover= grep(!defined($packages{$_}),sort keys %overridden);
-
-&writelist(_g("** Packages in archive but missing from override file: **"),
-           @missingover);
-if (@changedmaint) {
-    print(STDERR
-          _g(" ++ Packages in override file with incorrect old maintainer value: ++")."\n",
-          @changedmaint,
-          "\n") || die $!;
-}
-if (@samemaint) {
-    print(STDERR
-          _g(" -- Packages specifying same maintainer as override file: --")."\n",
-          @samemaint,
-          "\n") || die $!;
-}
-if (@spuriousover) {
-    print(STDERR
-          _g(" -- Packages in override file but not in archive: --")."\n",
-          @spuriousover,
-          "\n") || die $!;
-}
-
-printf(STDERR _g(" Wrote %s entries to output Packages file.")."\n", $records_written) || die $!;
+.TH dpkg\-scanpackages 1 "2012-05-07" "Debian Project" "dpkg utilities"
+.SH NAME
+dpkg\-scanpackages \- create Packages index files
+.
+.SH SYNOPSIS
+.B dpkg\-scanpackages
+.RI [ option "...] " binary-dir
+.RI [ override-file
+.RI [ path-prefix ]]
+.B >
+.I Packages
+.
+.SH DESCRIPTION
+.B dpkg\-scanpackages
+sorts through a tree of Debian binary packages and creates a Packages
+file, used by
+.BR apt (8),
+.BR dselect (1),
+etc, to tell the user what packages are available for installation. These
+Packages files are the same as those found on Debian archive sites
+and CD-ROMs. You might use
+.B dpkg\-scanpackages
+yourself if making a directory of local packages to install on a cluster
+of machines.
+.PP
+.B Note:
+If you want to access the generated Packages file with
+.B apt
+you will probably need to compress the file with
+.BR xz (1)
+(generating a Packages.xz file),
+.BR bzip2 (1)
+(generating a Packages.bz2 file) or
+.BR gzip (1)
+(generating a Packages.gz file). apt ignores uncompressed Packages
+files except on local access (i.e.
+.B file://
+sources).
+.PP
+.I binary-dir
+is the name of the tree of the binary packages to process (for example,
+.BR contrib/binary\-i386 ).
+It is best to make this relative to the root of the Debian archive,
+because every Filename field in the new Packages file will start with
+this string.
+.PP
+.I override-file
+is the name of a file to read which contains information about how the
+package fits into the distribution (the file can be compressed
+since dpkg 1.15.5); see
+.BR deb\-override (5).
+.PP
+.I path-prefix
+is an optional string to be prepended to the Filename fields.
+.PP
+If more than one version of a package is found only the newest one
+is included in the output. If they have the same version and only
+differ in architecture only the first one found is used.
+.
+.SH OPTIONS
+.TP
+.BR \-t ", " \-\-type " \fItype\fP"
+Scan for *.\fItype\fP packages, instead of *.deb.
+.TP
+.BR \-e ", " \-\-extra\-override " \fIfile\fP"
+Scan \fIfile\fP to find supplementary overrides (the file can be
+compressed since dpkg 1.15.5).
+See
+.BR deb\-extra\-override (5)
+for more information on its format.
+.TP
+.BR \-a ", " \-\-arch " \fIarch\fP"
+Use a pattern consisting of \fI*_all.deb\fP and \fI*_arch.deb\fP instead of
+scanning for all debs.
+.TP
+.BR \-h ", " \-\-hash " \fIhash-list\fP"
+Only generate file hashes for the comma-specified list specified
+(since dpkg 1.17.14).
+The default is to generate all currently supported hashes.
+Supported values: \fBmd5\fP, \fBsha1\fP, \fBsha256\fP.
+.TP
+.BR \-m ", " \-\-multiversion
+Include all found packages in the output.
+.TP
+.BR \-M ", " \-\-medium " \fIid-string\fP"
+Add an \fBX\-Medium\fP field containing the value \fIid-string\fP
+(since dpkg 1.15.5).
+This field is required if you want to generate \fBPackages.cd\fP files
+for use by the multicd access method of dselect.
+.TP
+.BR \-? ", " \-\-help
+Show the usage message and exit.
+.TP
+.BR \-\-version
+Show the version and exit.
+.
+.SH DIAGNOSTICS
+.B dpkg\-scanpackages
+outputs the usual self-explanatory errors. It also warns about packages
+that are in the wrong subdirectory, are duplicated, have a Filename
+field in their control file, are missing from the override file, or have
+maintainer substitutions which do not take effect.
+.
+.SH SEE ALSO
+.ad l
+.nh
+.BR dpkg (1),
+.BR dselect (1),
+.BR deb\-override (5),
+.BR deb\-extra\-override (5),
+.BR dpkg\-scansources (1).
