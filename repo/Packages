@@ -31,16 +31,16 @@ Author: shepgoba
 Name: CleanPhonePad
 
 Package: com.shepgoba.darkphone12
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Maintainer: shepgoba <shepgoba@gmail.com>
-Installed-Size: 204
-Depends: mobilesubstrate, me.nepeta.libcolorpicker
+Installed-Size: 312
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker
 Filename: debs/com.shepgoba.darkphone12.deb
-Size: 35374
-MD5sum: 6ab40812876f15cb3c75a51d6f97edb5
-SHA1: 1e2f82092fb93afb3e6f015b499eb99bba8a77c5
-SHA256: 894509b9d43ec95b9fb4fe1f66d0263c0844a536907d6aa912be7293d30e357c
+Size: 39324
+MD5sum: a5e571771d0d6b58d765c15fd5efe28a
+SHA1: 9ac6f5eacd4f4c7920b9cfa9ca0987b20b6daafc
+SHA256: 85a5dced698cca15aaadaed276470f3b401bdfef09c376180d7981be5a851450
 Section: Tweaks
 Description: Full dark mode for the phone app!
 Author: shepgoba <shepgoba@gmail.com>
@@ -75,7 +75,7 @@ MD5sum: 8e2d8ccf4cb406af40dbfa802c89f27c
 SHA1: 14bc57b59ac5df15cd5df9cc7a5e2041771ca239
 SHA256: fc99566638363224ec625129650971b713ca0001f3b4858242bbf6af79f8098a
 Section: Tweaks
-Description: Hide the annoying weather attribution text.
+Description: An awesome MobileSubstrate tweak!
 Author: shepgoba
 Name: NoWeatherInfoWS
 
