@@ -31,16 +31,16 @@ Author: shepgoba
 Name: CleanPhonePad
 
 Package: com.shepgoba.darkphone12
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm
 Maintainer: shepgoba <shepgoba@gmail.com>
-Installed-Size: 312
+Installed-Size: 316
 Depends: mobilesubstrate, org.thebigboss.libcolorpicker
 Filename: debs/com.shepgoba.darkphone12.deb
-Size: 39324
-MD5sum: a5e571771d0d6b58d765c15fd5efe28a
-SHA1: 9ac6f5eacd4f4c7920b9cfa9ca0987b20b6daafc
-SHA256: 85a5dced698cca15aaadaed276470f3b401bdfef09c376180d7981be5a851450
+Size: 39890
+MD5sum: 8a7f615a8287cc8d6ed48c2572be0359
+SHA1: 50fd9ca67dac4ee6df9445adf8f8a82fb57c84c5
+SHA256: cc63cfbe2fec2d8ea4685baab647c38e9505f3e469c0c9bf63ef903a678d779a
 Section: Tweaks
 Description: Full dark mode for the phone app!
 Author: shepgoba <shepgoba@gmail.com>
