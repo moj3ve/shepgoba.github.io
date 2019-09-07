@@ -1,3 +1,19 @@
+Package: com.shepgoba.batteryhomebar
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 288
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker (>= 1.6.3), firmware (>= 11.0)
+Filename: debs/com.shepgoba.batteryhomebar_1.0_iphoneos-arm.deb
+Size: 14230
+MD5sum: 226938de318dc661e71540ccc9fcf756
+SHA1: 4f63fd1fd4de42c379debc97db3bd73044cb073b
+SHA256: 35cc5114d552cb4daa9f04d350dd853c01817da8262413b79d81db6bbbb74142
+Section: Tweaks
+Description: Show the battery level on the Home Bar (iPhone X/XS/XR)
+Author: shepgoba
+Name: BatteryHomeBar
+
 Package: com.shepgoba.beatcane
 Version: 1.0.1
 Architecture: iphoneos-arm
