@@ -1,30 +1,30 @@
 Package: com.shepgoba.batteryhomebar
-Version: 1.1.1
+Version: 1.2
 Architecture: iphoneos-arm
 Maintainer: shepgoba
 Installed-Size: 284
 Depends: mobilesubstrate, me.nepeta.libcolorpicker | org.thebigboss.libcolorpicker (>= 1.6.3), firmware (>= 11.0)
 Filename: debs/com.shepgoba.batteryhomebar.deb
-Size: 12668
-MD5sum: 1e481ebfaff92f6969c34b417b0dc372
-SHA1: e49b694f08750f1aeb92dfede239c56300404c3c
-SHA256: 5944882b2a04550cec572f0e49324ec8f02fe7230c78d60d5eee15e529f836f6
+Size: 13592
+MD5sum: 4848b18dcaa79b3b7b1d71c72cfd3095
+SHA1: 203c955cdc36578127bfaafb7751edfb8a42f20d
+SHA256: 8346b72b9c547d9e3b35710dac990db0e2a0a768d53cb31779202059fd57901f
 Section: Tweaks
 Description: Show the battery level on the Home Bar (iPhone X/XS/XR)
 Author: shepgoba
 Name: BatteryHomeBar
 
 Package: com.shepgoba.beatcane
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Maintainer: shepgoba
-Installed-Size: 204
+Installed-Size: 108
 Depends: mobilesubstrate, firmware (>= 11.0)
 Filename: debs/com.shepgoba.beatcane.deb
-Size: 10800
-MD5sum: 4f475892494ef878fc9979ad1387e35c
-SHA1: b7399abfd149c76f06135c9fb25ca0e28437fcb4
-SHA256: 7fe389bf07d53ccdd97b01a286272fdfefa7a25f89c10f6a6209b78bb3755a2e
+Size: 6260
+MD5sum: 82c8246f6d1abe529886d95977f93aea
+SHA1: 28baa6c775f7d7390c8e15bf91544ead1493e3f4
+SHA256: d3e54b29033ea95639d47b888b2f85d187306acb1a231b04c58e6b953a59edc1
 Section: Tweaks
 Description: Add a percent indicator for music completion on iOS 11/12
 Author: shepgoba
