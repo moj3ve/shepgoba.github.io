@@ -111,3 +111,19 @@ Description: An awesome MobileSubstrate tweak!
 Author: shepgoba
 Name: NoWeatherInfoWS
 
+Package: com.shepgoba.randomsms
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 136
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.randomsms.deb
+Size: 6560
+MD5sum: b5a58553666ac2153014138a77080804
+SHA1: d6bdf17045b80f02e995c067082701f726730134
+SHA256: 1252651af8ba3adb2281f98a64885fb6e04e715eef3934b6062ae3a6ca6bbf11
+Section: Tweaks
+Description: iOS 11+ tweak to play a random tone when you receive a text (fulfills tweak bounty)
+Author: shepgoba
+Name: RandomSMS
+
