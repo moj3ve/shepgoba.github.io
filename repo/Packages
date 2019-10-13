@@ -46,6 +46,22 @@ Description: A tweak to make the Phone app keypad cleaner.
 Author: shepgoba
 Name: CleanPhonePad
 
+Package: com.shepgoba.customautolock12
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 284
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.customautolock12.deb
+Size: 7646
+MD5sum: 43fb79e25300351701eaae7d1a522df3
+SHA1: 46708f6d8d56ee579653726826a6de31769bfb82
+SHA256: 775423e2954b3c21923e9b47c3825c0e866fa5dcceebaa44a43ec6e3eb322aca
+Section: Tweaks
+Description: Custom auto lock on iOS 11+
+Author: shepgoba
+Name: CustomAutoLock12
+
 Package: com.shepgoba.darkphone12
 Version: 1.0.3
 Architecture: iphoneos-arm
