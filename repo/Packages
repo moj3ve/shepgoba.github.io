@@ -127,6 +127,22 @@ Description: An awesome MobileSubstrate tweak!
 Author: shepgoba
 Name: NoWeatherInfoWS
 
+Package: com.shepgoba.photoinfo
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 104
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.photoinfo_1.0_iphoneos-arm.deb
+Size: 3964
+MD5sum: ea7984805f51e6aab594d130602411fd
+SHA1: a3535e439cd2a70f9c0b065918415b22762339ef
+SHA256: bf5cca10c52eea10041169c1aefb284a26fa8b13a932fbf26b9bc9b28d935c9c
+Section: Tweaks
+Description: Show photo resolution and disk usage in app
+Author: shepgoba
+Name: PhotoInfo
+
 Package: com.shepgoba.randomsms
 Version: 1.0
 Architecture: iphoneos-arm
