@@ -159,3 +159,22 @@ Description: iOS 11+ tweak to play a random tone when you receive a text (fulfil
 Author: shepgoba
 Name: RandomSMS
 
+Package: org.thebigboss.libcolorpicker
+Version: 1.6.5
+Architecture: iphoneos-arm
+Maintainer: Bailey Seymour
+Installed-Size: 704
+Depends: firmware (>= 6.0)
+Replaces: me.nepeta.libcolorpicker
+Provides: me.nepeta.libcolorpicker
+Filename: debs/org.thebigboss.libcolorpicker_1.6.5_iphoneos-arm.deb
+Size: 134924
+MD5sum: 457682e662d4f5f4f526ea7372200f59
+SHA1: 5217e942e9a00947d387c43005ba79fe51a11e72
+SHA256: 147cb4ba6db9464d128996099a48909a1ae4172be1e54a5f73bb648c6e5e8b08
+Section: System
+Description: An awesome library of some sort!!
+Tag: role::developer
+Author: Bailey Seymour
+Name: libcolorpicker
+
