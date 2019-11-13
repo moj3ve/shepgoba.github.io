@@ -1,0 +1,180 @@
+Package: com.shepgoba.batteryhomebar
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 284
+Depends: mobilesubstrate, me.nepeta.libcolorpicker | org.thebigboss.libcolorpicker (>= 1.6.3), firmware (>= 11.0)
+Filename: debs/com.shepgoba.batteryhomebar.deb
+Size: 13592
+MD5sum: 4848b18dcaa79b3b7b1d71c72cfd3095
+SHA1: 203c955cdc36578127bfaafb7751edfb8a42f20d
+SHA256: 8346b72b9c547d9e3b35710dac990db0e2a0a768d53cb31779202059fd57901f
+Section: Tweaks
+Description: Show the battery level on the Home Bar (iPhone X/XS/XR)
+Author: shepgoba
+Name: BatteryHomeBar
+
+Package: com.shepgoba.beatcane
+Version: 1.0.2
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 108
+Depends: mobilesubstrate, firmware (>= 11.0)
+Filename: debs/com.shepgoba.beatcane.deb
+Size: 6260
+MD5sum: 82c8246f6d1abe529886d95977f93aea
+SHA1: 28baa6c775f7d7390c8e15bf91544ead1493e3f4
+SHA256: d3e54b29033ea95639d47b888b2f85d187306acb1a231b04c58e6b953a59edc1
+Section: Tweaks
+Description: Add a percent indicator for music completion on iOS 11/12
+Author: shepgoba
+Name: BeatCane
+
+Package: com.shepgoba.cleanphonepad
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 232
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.cleanphonepad.deb
+Size: 11420
+MD5sum: 591d36cfecc5f0dbc0c9a852539cc8ed
+SHA1: 89ce220eab2bf781fd82f0e53eb62fea355f8410
+SHA256: 86198449babf3f34ef12e8594be6c8a1f5c404ae2720c8210df89c4c2bd60e26
+Section: Tweaks
+Description: A tweak to make the Phone app keypad cleaner.
+Author: shepgoba
+Name: CleanPhonePad
+
+Package: com.shepgoba.customautolock12
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 284
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.customautolock12.deb
+Size: 7646
+MD5sum: 43fb79e25300351701eaae7d1a522df3
+SHA1: 46708f6d8d56ee579653726826a6de31769bfb82
+SHA256: 775423e2954b3c21923e9b47c3825c0e866fa5dcceebaa44a43ec6e3eb322aca
+Section: Tweaks
+Description: Custom auto lock on iOS 11+
+Author: shepgoba
+Name: CustomAutoLock12
+
+Package: com.shepgoba.darkphone12
+Version: 1.0.3
+Architecture: iphoneos-arm
+Maintainer: shepgoba <shepgoba@gmail.com>
+Installed-Size: 316
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker
+Filename: debs/com.shepgoba.darkphone12.deb
+Size: 39890
+MD5sum: 8a7f615a8287cc8d6ed48c2572be0359
+SHA1: 50fd9ca67dac4ee6df9445adf8f8a82fb57c84c5
+SHA256: cc63cfbe2fec2d8ea4685baab647c38e9505f3e469c0c9bf63ef903a678d779a
+Section: Tweaks
+Description: Full dark mode for the phone app!
+Author: shepgoba <shepgoba@gmail.com>
+Icon: file:///Library/PreferenceBundles/DarkPhone12.bundle/icon@2x.png
+Name: DarkPhone12
+
+Package: com.shepgoba.instasearch2
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 104
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.instasearch2.deb
+Size: 4078
+MD5sum: 9548dd2dab35925c0c55c4fc009de733
+SHA1: 91a01a4faec6615d59e5f223a7851412526ec356
+SHA256: 878a851681b2e1e2fd26b0daeb3ae5c34d263f676e90224ff79dffd5b236074d
+Section: Tweaks
+Description: Skip explore view on instagram
+Author: shepgoba
+Name: InstaSearch2
+
+Package: com.shepgoba.notifyheaders
+Version: 1.1.1
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 424
+Depends: mobilesubstrate, firmware (>= 11.0), org.thebigboss.libcolorpicker, net.limneos.libbulletin
+Filename: debs/com.shepgoba.notifyheaders.deb
+Size: 27120
+MD5sum: e647982006554a503d91e028bafb2a39
+SHA1: cac9ab4b2d480e26e09b6362549316d88015243d
+SHA256: 9c06f82afe10d50458b7edb509bb66fce3705c650c86fee0fd34150382954ad6
+Section: Tweaks
+Description: Get iOS 10 Notification Headers on iOS 12!
+Author: shepgoba
+Name: NotifyHeaders
+
+Package: com.shepgoba.noweatherinfows
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 104
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.noweatherinfows.deb
+Size: 2982
+MD5sum: 8e2d8ccf4cb406af40dbfa802c89f27c
+SHA1: 14bc57b59ac5df15cd5df9cc7a5e2041771ca239
+SHA256: fc99566638363224ec625129650971b713ca0001f3b4858242bbf6af79f8098a
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: shepgoba
+Name: NoWeatherInfoWS
+
+Package: com.shepgoba.photoinfo
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 104
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.photoinfo_1.0_iphoneos-arm.deb
+Size: 3964
+MD5sum: ea7984805f51e6aab594d130602411fd
+SHA1: a3535e439cd2a70f9c0b065918415b22762339ef
+SHA256: bf5cca10c52eea10041169c1aefb284a26fa8b13a932fbf26b9bc9b28d935c9c
+Section: Tweaks
+Description: Show photo resolution and disk usage in app
+Author: shepgoba
+Name: PhotoInfo
+
+Package: com.shepgoba.randomsms
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 136
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.randomsms.deb
+Size: 6560
+MD5sum: b5a58553666ac2153014138a77080804
+SHA1: d6bdf17045b80f02e995c067082701f726730134
+SHA256: 1252651af8ba3adb2281f98a64885fb6e04e715eef3934b6062ae3a6ca6bbf11
+Section: Tweaks
+Description: iOS 11+ tweak to play a random tone when you receive a text (fulfills tweak bounty)
+Author: shepgoba
+Name: RandomSMS
+
+Package: org.thebigboss.libcolorpicker
+Version: 1.6.5
+Architecture: iphoneos-arm
+Maintainer: Bailey Seymour
+Installed-Size: 940
+Depends: firmware (>= 6.0)
+Replaces: me.nepeta.libcolorpicker
+Provides: me.nepeta.libcolorpicker
+Filename: debs/org.thebigboss.libcolorpicker_1.6.5_iphoneos-arm.deb
+Size: 157996
+MD5sum: 2aea0f6b43d25b8d7f7908432896f91b
+SHA1: 7aafecac58289d8f36e4faf3aafdf23736962221
+SHA256: 295b1ae3cc36a1901365d400a144176fbb5d47ca8906ab96f252f96780ff9bfc
+Section: System
+Description: An awesome library of some sort!!
+Tag: role::developer
+Author: Bailey Seymour
+Name: libcolorpicker
+
