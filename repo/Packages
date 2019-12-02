@@ -1,3 +1,19 @@
+Package: com.shepgoba.atkeyboard
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 104
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.atkeyboard.deb
+Size: 2600
+MD5sum: d6e5a7f6c1f5b4fe7ff88b3ee50ec1a4
+SHA1: 0309d587531c69657d34a79169000ad125249904
+SHA256: 76219fc1961fa7fc107383f963d433484a3c860a90a7256ef7b93e88e50b3e75
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: shepgoba
+Name: AtKeyboard
+
 Package: com.shepgoba.batteryhomebar
 Version: 1.3
 Architecture: iphoneos-arm
