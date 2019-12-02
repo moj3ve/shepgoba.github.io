@@ -1,16 +1,16 @@
 Package: com.shepgoba.atkeyboard
-Version: 0.0.1
+Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: shepgoba
 Installed-Size: 104
 Depends: mobilesubstrate
 Filename: debs/com.shepgoba.atkeyboard.deb
-Size: 2600
-MD5sum: d6e5a7f6c1f5b4fe7ff88b3ee50ec1a4
-SHA1: 0309d587531c69657d34a79169000ad125249904
-SHA256: 76219fc1961fa7fc107383f963d433484a3c860a90a7256ef7b93e88e50b3e75
+Size: 2602
+MD5sum: 757bde4a370b8c7c3202732c02b45a7f
+SHA1: 5f8fba1d7b524e2ca329a1a882e9b5a43f984f09
+SHA256: 27231a7e06a74b235c69756b539deb8fadfea4be2074c94d64e84f4a379f3cb4
 Section: Tweaks
-Description: An awesome MobileSubstrate tweak!
+Description: Use email keyboard type everywhere (@ symbol)
 Author: shepgoba
 Name: AtKeyboard
 
