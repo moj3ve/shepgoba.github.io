@@ -2,15 +2,15 @@
     versions = 
     (
         {
-            name = "iOS 10.1",
-            ios-version = "10.1",
+            name = "iOS 10.1";
+            ios-version = "10.1";
             url = "iOS10.1-headers.7z";
         },
         {
-            name = "iOS 11.0",
-            ios-version = "11.0",
+            name = "iOS 11.0";
+            ios-version = "11.0";
             url = "iOS11.0-headers.7z";
-        }
+        },
         {
             name = "iOS 12.0";
             ios-version = "12.0";
