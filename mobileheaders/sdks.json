@@ -1,4 +1,10 @@
 [{
+	"name": "iOS 12.0",
+	"ios-version": "12.0",
+	"url": "iOS12.0-headers.7z"
+},
+{
 	"name": "iOS 13.2",
+	"ios-version": "13.2",
 	"url": "iOS13.2-headers.7z"
 }]
