@@ -1,0 +1,8 @@
+/*
+Big thanks to these people for the headers
+
+iOS 10.1 headers: https://github.com/JaviSoto/iOS10-Runtime-Headers
+iOS 11.0 headers: https://github.com/iuzumakin/iOS11-Runtime-Headers
+iOS 12.0 headers: https://github.com/nst/iOS-Runtime-Headers
+iOS 13.2 headers: https://github.com/LeoNatan/Apple-Runtime-Headers
+*/
