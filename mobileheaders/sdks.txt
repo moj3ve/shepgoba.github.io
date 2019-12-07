@@ -1,0 +1,4 @@
+[{
+	"name": "iOS 13.2",
+	"url": "iOS13.2-headers.7z"
+}]
