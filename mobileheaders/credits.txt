@@ -1,6 +1,9 @@
 /*
 Big thanks to these people for the headers
 
+iOS 7.0 headers: https://github.com/isklikas/iOS7-Runtime-Headers
+iOS 8.0 headers: https://github.com/nin9tyfour/iOS8-Runtime-Headers
+iOS 9.0 headers: https://github.com/ultramiraculous/iOS9-Runtime-Headers
 iOS 10.1 headers: https://github.com/JaviSoto/iOS10-Runtime-Headers
 iOS 11.0 headers: https://github.com/iuzumakin/iOS11-Runtime-Headers
 iOS 12.0 headers: https://github.com/nst/iOS-Runtime-Headers

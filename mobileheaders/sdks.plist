@@ -2,25 +2,53 @@
     versions = 
     (
         {
+            name = "iOS 7.0";
+            ios-version = "7.0";
+            url = "iOS7.0-headers.7z";
+            size = "1773564";
+            installed-size = "18753958";
+        },
+        {
+            name = "iOS 8.0";
+            ios-version = "8.0";
+            url = "iOS8.0-headers.7z";
+            size = "2530828";
+            installed-size = "32970986";
+        },
+        {
+            name = "iOS 9.0";
+            ios-version = "9.0";
+            url = "iOS9.0-headers.7z";
+            size = "8290520";
+            installed-size = "114658005";
+        },
+        {
             name = "iOS 10.1";
             ios-version = "10.1";
             url = "iOS10.1-headers.7z";
+            size = "6046016";
+            installed-size = "60303029";
         },
         {
             name = "iOS 11.0";
             ios-version = "11.0";
             url = "iOS11.0-headers.7z";
+            size = "8022009";
+            installed-size = "79531315";
         },
         {
             name = "iOS 12.0";
             ios-version = "12.0";
             url = "iOS12.0-headers.7z";
+            size = "9469666";
+            installed-size = "95169033";
         },
-
         {
             name = "iOS 13.2";
             ios-version = "13.2";
             url = "iOS13.2-headers.7z";
+            size = "12486244";
+            installed-size = "140199938";
         }
     );
 }
