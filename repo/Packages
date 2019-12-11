@@ -15,16 +15,16 @@ Author: shepgoba
 Name: AtKeyboard
 
 Package: com.shepgoba.batteryhomebar
-Version: 1.3
+Version: 1.3.1
 Architecture: iphoneos-arm
 Maintainer: shepgoba
 Installed-Size: 284
 Depends: mobilesubstrate, org.thebigboss.libcolorpicker (>= 1.6.3) | me.nepeta.libcolorpicker, firmware (>= 11.0)
-Filename: debs/com.shepgoba.batteryhomebar_1.3_iphoneos-arm.deb
-Size: 14894
-MD5sum: e390b32eff8857be898b2873eb0db647
-SHA1: 2ca3771b2b86b2634bdb9b66e1d24b2c89752937
-SHA256: 3644f17474709bc5ed925e0c0c6facd401a245627f4fb0e65300f29a12aff86a
+Filename: debs/com.shepgoba.batteryhomebar_1.3.1_iphoneos-arm.deb
+Size: 14674
+MD5sum: 4655737126b858b1d2831531166b4db0
+SHA1: 88945fc212fb96746e6a1a598e5f91401a597561
+SHA256: 9987a330a3d78aa11b5dc6783bd2710d095ad6d626d0b262eefa219ca176b132
 Section: Tweaks
 Description: Show the battery level on the Home Bar (iPhone X/XS/XR)
 Author: shepgoba
