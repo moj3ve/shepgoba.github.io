@@ -31,16 +31,16 @@ Author: shepgoba
 Name: BatteryHomeBar
 
 Package: com.shepgoba.beatcane
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm
 Maintainer: shepgoba
 Installed-Size: 108
 Depends: mobilesubstrate, firmware (>= 11.0)
-Filename: debs/com.shepgoba.beatcane.deb
-Size: 6260
-MD5sum: 82c8246f6d1abe529886d95977f93aea
-SHA1: 28baa6c775f7d7390c8e15bf91544ead1493e3f4
-SHA256: d3e54b29033ea95639d47b888b2f85d187306acb1a231b04c58e6b953a59edc1
+Filename: debs/com.shepgoba.beatcane_1.0.3_iphoneos-arm.deb
+Size: 6208
+MD5sum: 1b755ecdc6cc571f4e3d7dfe1b1572be
+SHA1: 9d973f77ed541ae18176657473e5a93ac5093063
+SHA256: a5a94647571f3d7e6c818c74dd93fdf4a341a3f715ba785b958a883d759b004c
 Section: Tweaks
 Description: Add a percent indicator for music completion on iOS 11/12
 Author: shepgoba
