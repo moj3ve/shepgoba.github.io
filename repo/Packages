@@ -111,6 +111,22 @@ Description: Skip explore view on instagram
 Author: shepgoba
 Name: InstaSearch2
 
+Package: com.shepgoba.no3ddelete
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 104
+Depends: mobilesubstrate, firmware (>= 13.2)
+Filename: debs/com.shepgoba.no3ddelete_1.0_iphoneos-arm.deb
+Size: 3252
+MD5sum: 5007de67b1fdc91d8e5804c3f6d904ab
+SHA1: 27939f0ac6f261a1ff616329f831dc0792a5acf0
+SHA256: 3b69ee83dc82d9ee35d9bdcdc0e133c67294ab2007869e4437a158417fc66c2e
+Section: Tweaks
+Description: Hide the delete option for apps on iOS 13.2
+Author: shepgoba
+Name: No3DDelete
+
 Package: com.shepgoba.notifyheaders
 Version: 1.1.1
 Architecture: iphoneos-arm
