@@ -180,14 +180,14 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: shepgoba
 Installed-Size: 280
-Depends: mobilesubstrate, firmware (>= 13.2)
+Depends: mobilesubstrate, firmware (>= 13.0)
 Filename: debs/com.shepgoba.remove3doptions_1.0_iphoneos-arm.deb
-Size: 7900
-MD5sum: b18288a81a2d9ff2338605c0a877a3ed
-SHA1: ceff1dee43d7a177305e41a97508bdd3cf4108c8
-SHA256: f64fbefecf590d819514a85e6c7843874362dfa228b44c778ee44c4bb68a56c4
+Size: 7892
+MD5sum: 9cf1db9c876ccce8cb15c7ba1374e15e
+SHA1: 24a75296c5aa02244d2ce19f65d91e442cc2c231
+SHA256: 28c87861feb974b5b7530e659cf28b09925eecfe525869c3d4f16abdb8b399b0
 Section: Tweaks
-Description: Hide the delete option for apps on iOS 13.2
+Description: Hide the delete option for apps on iOS 13
 Author: shepgoba
 Name: Remove3DOptions
 
