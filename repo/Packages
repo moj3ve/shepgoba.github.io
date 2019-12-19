@@ -111,22 +111,6 @@ Description: Skip explore view on instagram
 Author: shepgoba
 Name: InstaSearch2
 
-Package: com.shepgoba.no3ddelete
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: shepgoba
-Installed-Size: 104
-Depends: mobilesubstrate, firmware (>= 13.2)
-Filename: debs/com.shepgoba.no3ddelete_1.0_iphoneos-arm.deb
-Size: 3252
-MD5sum: 5007de67b1fdc91d8e5804c3f6d904ab
-SHA1: 27939f0ac6f261a1ff616329f831dc0792a5acf0
-SHA256: 3b69ee83dc82d9ee35d9bdcdc0e133c67294ab2007869e4437a158417fc66c2e
-Section: Tweaks
-Description: Hide the delete option for apps on iOS 13.2
-Author: shepgoba
-Name: No3DDelete
-
 Package: com.shepgoba.notifyheaders
 Version: 1.1.1
 Architecture: iphoneos-arm
@@ -190,6 +174,22 @@ Section: Tweaks
 Description: iOS 11+ tweak to play a random tone when you receive a text (fulfills tweak bounty)
 Author: shepgoba
 Name: RandomSMS
+
+Package: com.shepgoba.remove3doptions
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 280
+Depends: mobilesubstrate, firmware (>= 13.2)
+Filename: debs/com.shepgoba.remove3doptions_1.0_iphoneos-arm.deb
+Size: 7900
+MD5sum: b18288a81a2d9ff2338605c0a877a3ed
+SHA1: ceff1dee43d7a177305e41a97508bdd3cf4108c8
+SHA256: f64fbefecf590d819514a85e6c7843874362dfa228b44c778ee44c4bb68a56c4
+Section: Tweaks
+Description: Hide the delete option for apps on iOS 13.2
+Author: shepgoba
+Name: Remove3DOptions
 
 Package: org.thebigboss.libcolorpicker
 Version: 1.6.5
