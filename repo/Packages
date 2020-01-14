@@ -62,6 +62,38 @@ Description: A tweak to make the Phone app keypad cleaner.
 Author: shepgoba
 Name: CleanPhonePad
 
+Package: com.shepgoba.colorscroll
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 408
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.colorscroll_0.0.1_iphoneos-arm.deb
+Size: 10780
+MD5sum: e42211793e410fc9f9475b7684d99f84
+SHA1: 8651e624b6cba5051c375918de6f37f3de574390
+SHA256: 2340ccb3bc409c81169d589700913f50fff219ae57d77ee0a6dad082862adcb1
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: shepgoba
+Name: ColorScroll
+
+Package: com.shepgoba.colorscroll
+Version: 1.0-1
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 408
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker (>= 1.6.3) | me.nepeta.libcolorpicker
+Filename: debs/com.shepgoba.colorscroll_1.0-1_iphoneos-arm.deb
+Size: 10810
+MD5sum: 0da57c97d6bba846e0a2a3a2fbda531b
+SHA1: 405e04d01caf749e44058788e4f365cbe673c873
+SHA256: 9d9e37723c83b024db8dffd9a9210c06f4af67a1a0ddd3e101144e37abaf1621
+Section: Tweaks
+Description: Color your scroll indicator
+Author: shepgoba
+Name: ColorScroll
+
 Package: com.shepgoba.customautolock12
 Version: 1.0
 Architecture: iphoneos-arm
