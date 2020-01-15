@@ -94,6 +94,22 @@ Description: Color your scroll indicator
 Author: shepgoba
 Name: ColorScroll
 
+Package: com.shepgoba.colorscroll
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 412
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker (>= 1.6.3) | me.nepeta.libcolorpicker
+Filename: debs/com.shepgoba.colorscroll_1.0.1_iphoneos-arm.deb
+Size: 16644
+MD5sum: 658aef84853fd69628fa13c18a913477
+SHA1: bffddbcc9ae8beb2a0356cfa2ab290f3c3a035ec
+SHA256: 83fbe9db1442741926dec5728cb7156958a4dbe2a336763b33e742e9ab2aacdd
+Section: Tweaks
+Description: Color your scroll indicator
+Author: shepgoba
+Name: ColorScroll
+
 Package: com.shepgoba.customautolock12
 Version: 1.0
 Architecture: iphoneos-arm
