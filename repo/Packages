@@ -143,6 +143,22 @@ Author: shepgoba <shepgoba@gmail.com>
 Icon: file:///Library/PreferenceBundles/DarkPhone12.bundle/icon@2x.png
 Name: DarkPhone12
 
+Package: com.shepgoba.downloadbar13
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 136
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.downloadbar13_1.0_iphoneos-arm.deb
+Size: 5150
+MD5sum: d0a2b6c082667a046ad40c2931ccf4ac
+SHA1: 979374464af6489f524f06e5c3be031020246373
+SHA256: 5538673a6f4d3535bdb1e06218e6ffc5da8a592641428432d4fa2580d88544fd
+Section: Tweaks
+Description: Show a progress bar for downloading apps instead!
+Author: shepgoba
+Name: DownloadBar13
+
 Package: com.shepgoba.folderlist
 Version: 1.0
 Architecture: iphoneos-arm
