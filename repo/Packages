@@ -191,6 +191,22 @@ Description: Show a list of all the applications in a folder (like watchOS)
 Author: shepgoba
 Name: FolderList
 
+Package: com.shepgoba.folderlist
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: shepgoba
+Installed-Size: 324
+Depends: mobilesubstrate
+Filename: debs/com.shepgoba.folderlist_1.0.1_iphoneos-arm.deb
+Size: 28754
+MD5sum: 1ed9040de01c803b0ab1a481007203c0
+SHA1: 64533753eabe6f975307ec90494fa6c51e28a5b5
+SHA256: abbe39a19c96ca3eb5fdac279f8a36cd2bbb1650fb79ea47495d9bc69da0439f
+Section: Tweaks
+Description: Show a list of all the applications in a folder (like watchOS)
+Author: shepgoba
+Name: FolderList
+
 Package: com.shepgoba.iheaders
 Version: 1.0
 Architecture: iphoneos-arm
